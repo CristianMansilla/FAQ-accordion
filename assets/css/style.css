@@ -31,33 +31,42 @@ main{
 }
 
 .card_container{
-    width: 40%;
+    width: 35%;
+    height: 23em;
     background-color: white;
     padding: 2em;
     border-radius: 8px;
-    /* position: relative; */
+    position: relative;
+    bottom: 25%;
 }
 
 .card_question{
-    /* position: relative; */
+    position: relative;
     padding: 10px;
     cursor: pointer;
+    font-size: 0.75em;
 }
 
 .card_question::after{
     content: url("../images/icon-plus.svg");
-    /* position: absolute; */
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
 
 }
 
 .card_answer{
-    /* position: relative; */
+    position: relative;
+    margin: 0.7em;
     height: 0;
     overflow: hidden;
+    font-size: 0.75em;
+    color: gray;
 }
 
 .card_question.active + .card_answer{
-    height: 150px;
+    height: auto;
 }
 
 .card_question.active::after{
