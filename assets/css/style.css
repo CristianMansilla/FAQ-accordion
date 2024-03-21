@@ -73,3 +73,19 @@ main{
     content: url("../images/icon-minus.svg");
 }
 
+@media (max-width: 801px){
+    .card_container{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .card_container{
+        width: 80%;
+        height: 27em;
+    }
+}
+
+
+
+
